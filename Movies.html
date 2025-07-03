@@ -24,7 +24,7 @@
             line-height: 1.6;
             background-color: #000000;
             color: #ffffff;
-            background-image: url('DarkHelmet.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;
+            background-image: url('GlowyPurpleSuit.png'); background-size: cover; background-repeat: no-repeat; background-position: center;
 
         }
 
@@ -86,6 +86,62 @@
             box-shadow: 0 4px 8px rgb(255, 255, 255);
         }
 
+/* Weapons Section Styles */
+        .weapons-section {
+            padding: 50px 100px;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .weapons-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #be6df4;
+            margin-bottom: 2rem;
+        }
+
+        .weapons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .weapon-card {
+            background: #1c1c1c;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(188, 109, 244, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .weapon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(188, 109, 244, 0.5);
+        }
+
+        .weapon-card h3 {
+            color: #be6df4;
+            margin-bottom: 0.75rem;
+        }
+
+        .weapon-card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .weapon-card a {
+            color: rgb(114, 239, 255);
+            text-decoration: none;
+        }
+
+        .weapon-card a:visited {
+            color: rgb(114, 239, 255);
+        }
+
+        .weapon-card a:hover {
+            color: #be6df4;
+        }
+
+
         footer {
             background: #680298cb;
             color: #fff;
@@ -122,26 +178,24 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="AbtWk.html">About</a></li>
             <li><a href="Panthers.html">Panthers</a></li>
+            <li><a href="Weapons.html">Weapons</a></li>
             <li><a href="Movies.html">Movies</a></li>
         </ul>
     </nav>
 
-    <div class="main-content">
-        <div class="content">
-            <h2>Watch Wakanda</h2>
-            <b><p><br>In Black Panther (2018), T’Challa returns home after his father’s death to take his place as king, but his reign is challenged by Erik Killmonger, a rival with a painful past and a radical vision for Wakanda’s future. T’Challa must navigate tradition, responsibility, and justice to protect his people and define what kind of leader he will be.<br><br></p>
-            <p>In Black Panther: Wakanda Forever (2022), the nation mourns the loss of T’Challa and faces rising global pressure for access to vibranium. As Queen Ramonda, Shuri, and the Wakandan people fight to defend their sovereignty, a new threat surfaces from the underwater kingdom of Talokan, led by the powerful Namor. In the midst of grief and uncertainty, a new Black Panther must rise to carry on the legacy and protect Wakanda’s future.</p></b>
-        </div>
+    <section class="weapons-section">
+        <h2>Watch Wakanda</h2>
+        <div class="weapons-grid">
 
-        <div class="sidebar">
-            <h3 style="text-align: center;">Black Panther<br><br></h3>
-            <b><a href="https://www.marvel.com/movies/black-panther/">Black Panther Movie</a></b>
-            <br><br>
-            <b><a href="https://www.marvel.com/movies/black-panther-wakanda-forever">Black Panther: Wakanda Forever</a></b>
-            <br><br>
-            <b><a href="https://pastebin.com/raw/H6psBEh2">Raw Suit Schematics</a></b>
+            <div class="weapon-card">
+                <p><br>In <a href="https://www.marvel.com/movies/black-panther/">Black Panther (2018),</a></b> T’Challa returns home after his father’s death to take his place as king, but his reign is challenged by Erik Killmonger, a rival with a painful past and a radical vision for Wakanda’s future. T’Challa must navigate tradition, responsibility, and justice to protect his people and define what kind of leader he will be.<br><br></p>
+            </div>
+            <div class="weapon-card">
+                <p><br>In <a href="https://www.marvel.com/movies/black-panther-wakanda-forever">Black Panther: Wakanda Forever (2022),</a> the nation mourns the loss of T’Challa and faces rising global pressure for access to vibranium. A new threat surfaces from the underwater kingdom of Talokan, led by the powerful Namor. In the midst of grief and uncertainty, a new Black Panther must rise to carry on the legacy and protect Wakanda’s future.</p></b>
+            </div>
+
         </div>
-    </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Wakanda Project | All rights reserved</p>
