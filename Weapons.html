@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Megrim&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="GlowyPurpleSuit.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panthers</title>
+
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Megrim';
+            line-height: 1.6;
+            background-color: #000000;
+            color: #ffffff;
+            background-image: url('Darkroom.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header {
+            background: #000000;
+            font-size: large;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #000000;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f9;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin: 100px;
+        }
+
+        .main-content .content {
+            flex: 1;
+            background-color: #000000;
+            padding: 20px;
+            margin-right: 100px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+        }
+
+        .main-content .sidebar {
+            width: 600px;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+        }
+
+        footer {
+            background: #680298cb;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Weapons Section Styles */
+        .weapons-section {
+            padding: 50px 100px;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .weapons-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #be6df4;
+            margin-bottom: 2rem;
+        }
+
+        .weapons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .weapon-card {
+            background: #1c1c1c;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(188, 109, 244, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .weapon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(188, 109, 244, 0.5);
+        }
+
+        .weapon-card h3 {
+            color: rgb(114, 249, 255);
+            margin-bottom: 0.75rem;
+        }
+
+        .weapon-card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .main-content .content {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .weapons-section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Weapons and Tools</h1>
+        <p>The Elders Welcome You</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AbtWk.html">About</a></li>
+            <li><a href="Panthers.html">Panthers</a></li>
+            <li><a href="Weapons.html">Weapons</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+        </ul>
+    </nav>
+
+    <!-- Weapons Section -->
+    <section class="weapons-section">
+        <h2>Wakandan Weapons</h2>
+        <div class="weapons-grid">
+
+            <div class="weapon-card">
+                <h3>Vibranium Spear</h3>
+                <p>Lightweight and nearly indestructible, the spear is used by the elite <abbr title="The legendary female warriors of Wakanda">Dora Milaje</abbr>.</p>
+            </div>
+
+            <div class="weapon-card">
+                <h3>Energy Daggers</h3>
+                <p>Compact weapons that emit energy blades. Used by Shuri and the Black Panther.</p>
+            </div>
+
+            <div class="weapon-card">
+                <h3>Sonic Gauntlets</h3>
+                <p>Panther-shaped gauntlets that fire sonic blasts. Wielded by Shuri in battle.</p>
+            </div>
+
+            <div class="weapon-card">
+                <h3>Vibranium Shield</h3>
+                <p>A compact energy/vibranium hybrid shield used in both defense and attack.</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <h2>Wakandan Tools</h2>
+        <div class="weapons-grid">
+
+            <div class="weapon-card">
+                <h3>Panther Habit</h3>
+                <p>T'Challa's vibranium suit absorbs and releases kinetic energy. Comes with retractable claws.</p>
+            </div>
+
+            <div class="weapon-card">
+                <h3>Kimoyo Beads</h3>
+                <p>Versatile vibranium beads used for communication, healing, hacking, and defense.</p>
+            </div>
+
+            <div class="weapon-card">
+                <h3>Remote Piloting Interface</h3>
+                <p>Allows users to control aircraft, vehicles, or drones from miles away using a real-time interface.</p>
+            </div>
+
+            <div class="weapon-card">
+                <h3>Holographic Display Gauntlet</h3>
+                <p>A wearable vibranium-based device that projects full 3D holograms and interfaces, and enables tech analysis or long-range comms.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Wakanda Project | All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
