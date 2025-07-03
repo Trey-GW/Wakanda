@@ -85,6 +85,48 @@
             box-shadow: 0 4px 8px rgb(255, 255, 255);
         }
 
+/* Weapons Section Styles */
+        .weapons-section {
+            padding: 50px 100px;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .weapons-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #be6df4;
+            margin-bottom: 2rem;
+        }
+
+        .weapons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .weapon-card {
+            background: #1c1c1c;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(188, 109, 244, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .weapon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(188, 109, 244, 0.5);
+        }
+
+        .weapon-card h3 {
+            color: #be6df4;
+            margin-bottom: 0.75rem;
+        }
+
+        .weapon-card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
         footer {
             background: #680298cb;
             color: #fff;
@@ -120,33 +162,37 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="AbtWk.html">About</a></li>
             <li><a href="Panthers.html">Panthers</a></li>
+            <li><a href="Weapons.html">Weapons</a></li>
             <li><a href="Movies.html">Movies</a></li>
         </ul>
     </nav>
 
-    <div class="main-content">
-        <div class="content">
-            <h2>Bashenga</h2>
-            <p>Bashenga is the first legendary Black Panther who untied the warring tribes of Wakanda after discovering the <abbr title="An indestructible alloy that absorbs and stores energy">vibranium</abbr> meteorite. He created the Panther tribe and the role of Black Panther. His soul serves as a guide, and his vision of Wakanda being a hidden sanctuary of power and wisdom continues to shape its destiny.</p></b>
-        </div>
+    <section class="weapons-section">
+        <h2>Wakandan Leaders</h2>
+        <div class="weapons-grid">
 
-        <div class="sidebar">
-            <h2>T'Chaka</h2>
-            <p>T'Chaka is T'Challa's father and the Black Panther before him. He was a wise and respected king who prioritized the secrecy and protection of Wakanda. T'Chaka's past decisions set off a chain of events that deeply affect T'Challa. Though his rule was stable, his legacy is complicated, showing how even kings can make flawed choices in the name of preservation.</p>
-        </div>
-    </div>
+            <div class="weapon-card">
+                <h2>Bashenga</h2>
+                <p>Bashenga is the first legendary Black Panther who untied the warring tribes of Wakanda after discovering the <abbr title="An indestructible alloy that absorbs and stores energy">vibranium</abbr> meteorite. He created the Panther tribe and the role of Black Panther. His soul serves as a guide, and his vision of Wakanda being a hidden sanctuary of power and wisdom continues to shape its destiny.</p></b>
+            </div>
 
-    <div class="main-content">
-        <div class="content">
-            <h2><abbr title="Rest in Peace to Chadwick Boseman, he brought Panther to life">T'Challa</abbr></h2>
-            <p>Gifted with enhanced senses, strength, and agility from the Heart-Shaped Herb, T'Challa defends his nation while also becoming a global superhero--joining the Avengers and leading with honor. T'Challa's reign is marked by his struggle to balance tradition with progress, and his legacy defines what it means to rule with compassion.</p>
-        </div>
-        <div class="sidebar">
-            <h2>Shuri</h2>
-            <p>Shuri, T'Challa's younger sister, is a brilliant scientist and innovator--the mind behind Wakanda's advanced technology. After the mantle was passed down from T'Challa, her legacy became more cerebral and tech-driven, but equally courageous. Shuri represents the next generation of Wakandan leadership--one shaped by grief, science, and large shoes to fill.</p>
-        </div>
+            <div class="weapon-card">
+                <h2>T'Chaka</h2>
+                <p>T'Chaka is T'Challa's father and the Black Panther before him. He was a wise and respected king who prioritized the secrecy and protection of Wakanda. T'Chaka's past decisions set off a chain of events that deeply affect T'Challa. Though his rule was stable, his legacy is complicated, showing how even kings can make flawed choices in the name of preservation.</p>
+            </div>
+        
+            <div class="weapon-card">
+                <h2><abbr title="Rest in Peace to Chadwick Boseman, he brought Panther to life">T'Challa</abbr></h2>
+                <p>Gifted with enhanced senses, strength, and agility from the Heart-Shaped Herb, T'Challa defends his nation while joining the Avengers and leading with honor. T'Challa's reign is marked by his struggle to balance tradition with progress, and his legacy defines what it means to rule with compassion.</p>
+            </div>
 
-    </div>
+            <div class="weapon-card">
+                <h2>Shuri</h2>
+                <p>Shuri, T'Challa's younger sister, is a brilliant scientist and innovator--the mind behind Wakanda's advanced technology. After the mantle was passed down from T'Challa, her legacy became more cerebral and tech-driven, but equally courageous. Shuri represents the next generation of Wakandan leadership--one shaped by grief, science, and large shoes to fill.</p>
+            </div>
+
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Wakanda Project | All rights reserved</p>
