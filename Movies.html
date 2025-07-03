@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Megrim&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="GlowyPurpleSuit.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies</title>
+
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Megrim';
+            line-height: 1.6;
+            background-color: #000000;
+            color: #ffffff;
+            background-image: url('DarkHelmet.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;
+
+        }
+
+        header {
+            background: #000000;
+            font-size: large;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: #f4f4f9;
+        }
+
+        nav {
+            background: #000000;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f9;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .main-content .content {
+            flex: 1;
+            background-color: #ffffff00;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+        }
+
+        .main-content .sidebar {
+            width: 250px;
+            background-color: #ffffff00;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+        }
+
+        footer {
+            background: #680298cb;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .main-content .content {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Enjoy our Movies</h1>
+        <p>The Elders Welcome You</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/frede/OneDrive/Documents/Wakanda%20Project/Wakanda.html">Home</a></li>
+            <li><a href="file:///C:/Users/frede/OneDrive/Documents/Wakanda%20Project/AbtWk.html">About</a></li>
+            <li><a href="file:///C:/Users/frede/OneDrive/Documents/Wakanda%20Project/Panthers.html">Panthers</a></li>
+            <li><a href="file:///C:/Users/frede/OneDrive/Documents/Wakanda%20Project/Movies.html">Movies</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="content">
+            <h2>Watch Wakanda</h2>
+            <b><p><br>In Black Panther (2018), T’Challa returns home after his father’s death to take his place as king, but his reign is challenged by Erik Killmonger, a rival with a painful past and a radical vision for Wakanda’s future. T’Challa must navigate tradition, responsibility, and justice to protect his people and define what kind of leader he will be.<br><br></p>
+            <p>In Black Panther: Wakanda Forever (2022), the nation mourns the loss of T’Challa and faces rising global pressure for access to vibranium. As Queen Ramonda, Shuri, and the Wakandan people fight to defend their sovereignty, a new threat surfaces from the underwater kingdom of Talokan, led by the powerful Namor. In the midst of grief and uncertainty, a new Black Panther must rise to carry on the legacy and protect Wakanda’s future.</p></b>
+        </div>
+
+        <div class="sidebar">
+            <h3 style="text-align: center;">Black Panther<br><br></h3>
+            <b><a href="https://www.marvel.com/movies/black-panther/">Black Panther Movie</a></b>
+            <br><br>
+            <b><a href="https://www.marvel.com/movies/black-panther-wakanda-forever">Black Panther: Wakanda Forever</a></b>
+            <br><br>
+            <b><a href="https://pastebin.com/raw/H6psBEh2">Raw Suit Schematics</a></b>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wakanda Project | All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
